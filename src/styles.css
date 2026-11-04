@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #1a120c;
+  --color-fg: #f3e2c4;
+  --color-accent: #e08a2c;
+  --color-moss: #3f6b32;
+  --color-surface: #2a1c12;
+  --font-sans: Georgia, "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  html,
+  body {
+    height: 100%;
+    overflow: hidden;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+}
